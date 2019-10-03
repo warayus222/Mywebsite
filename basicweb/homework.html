@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script>
+     var price=20000;
+     var importTax=price*0.3;
+     var vatPrice=price*0.07;
+     var netPrice=price+importTax+vatPrice;
+</script>
+<style>
+    table{
+        border-radius: 10px;
+    }
+    h1{
+        color:white;
+    }
+    fieldset{
+        color:white;
+        border-style:double;
+    }
+    tr td{
+        color:#ff8c00;
+    }
+</style>
+</head>
+<body bgcolor="black">
+   <center> 
+       <h1>การหาราคารองเท้านำเข้าที่ราคาเกิน20000</h1>
+    <fieldset>
+        <legend>โปรแกรมคำนวณราคารองเท้า</legend>
+        <table>
+            <tr> 
+                <td>ราคารองเท้า</td>
+                <td>:</td>
+                <td><script>document.write(price) </script></td>
+                <td>บาท</td>
+            </tr>
+            <tr> 
+                <td>ราคา Import TAX </td>
+                <td>:</td>
+                <td><script>document.write(importTax) </script></td>
+                <td>บาท</td>
+            </tr>
+            <tr> 
+                <td>ราคา VAT</td>
+                <td>:</td>
+                <td><script>document.write(vatPrice) </script></td>
+                <td>บาท</td>
+            </tr>
+            <tr> 
+                <td>ราคาสุทธิ</td>
+                <td> :</td>
+                <td><script>document.write(netPrice) </script></td>
+                <td>บาท</td>
+            </tr>
+        </table>
+    </fieldset>
+    <img src="icon/giphy (1).gif" width="30%">
+    <img src="icon/giphy (2).gif"width="30%">
+</center>
+</body>
+</html>
